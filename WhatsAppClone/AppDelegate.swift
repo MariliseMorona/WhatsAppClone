@@ -10,27 +10,38 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        window?.backgroundColor = .systemBackground
+        
+        let vcStatus = StatusViewController()
+        let vcCalls = CallsViewController()
+        let vcCamera = CameraViewController()
+        let vcChats = ChatsViewController()
+        let vcSettings = SettingsViewController()
+        
+//        vcStatus.tabBarItem = UITabBarItem(title: "Status", image: UIImage(named: "status"), tag: 0)
+        vcStatus.tabBarItem = UITabBarItem(tabBarSystemItem: .history, tag: 0)
+        vcCalls.tabBarItem = UITabBarItem(tabBarSystemItem: .recents, tag: 1)
+        vcCamera.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 2)
+        vcChats.tabBarItem = UITabBarItem(tabBarSystemItem: .featured, tag: 4)
+        vcSettings.tabBarItem = UITabBarItem(tabBarSystemItem: .mostViewed, tag: 5)
+        
+        let ncStatus = UINavigationController(rootViewController: vcStatus)
+        let ncCalls = UINavigationController(rootViewController: vcCalls)
+        let ncCamera = UINavigationController(rootViewController: vcCamera)
+        let ncChats = UINavigationController(rootViewController: vcChats)
+        let ncSettings = UINavigationController(rootViewController: vcSettings)
+        
+        let tabBarController = UITabBarController()
+        tabBarController.viewControllers = [ncStatus, ncCalls, ncCamera, ncChats, ncSettings]
+        
+        window?.rootViewController = tabBarController
+        
         return true
     }
-
-    // MARK: UISceneSession Lifecycle
-
-    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        // Called when a new scene session is being created.
-        // Use this method to select a configuration to create the new scene with.
-        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
-    }
-
-    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-        // Called when the user discards a scene session.
-        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
-    }
-
-
 }
-
