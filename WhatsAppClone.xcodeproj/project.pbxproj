@@ -12,6 +12,7 @@
 		16299FC0271A511E0061CAE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16299FBF271A511E0061CAE0 /* Assets.xcassets */; };
 		16299FC3271A511E0061CAE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16299FC1271A511E0061CAE0 /* LaunchScreen.storyboard */; };
 		480F4DB42936B2C4001D7E59 /* CallTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480F4DB32936B2C4001D7E59 /* CallTableViewCell.swift */; };
+		480F4DBA2936B648001D7E59 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480F4DB92936B648001D7E59 /* ChatTableViewCell.swift */; };
 		486AE840289C857600C81775 /* StatusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486AE83F289C857600C81775 /* StatusTableViewCell.swift */; };
 		486AE842289C85FF00C81775 /* CallsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486AE841289C85FF00C81775 /* CallsViewController.swift */; };
 		486AE844289C865B00C81775 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486AE843289C865B00C81775 /* CameraViewController.swift */; };
@@ -27,6 +28,7 @@
 		16299FC2271A511E0061CAE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16299FC4271A511E0061CAE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		480F4DB32936B2C4001D7E59 /* CallTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallTableViewCell.swift; sourceTree = "<group>"; };
+		480F4DB92936B648001D7E59 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 		486AE83F289C857600C81775 /* StatusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusTableViewCell.swift; sourceTree = "<group>"; };
 		486AE841289C85FF00C81775 /* CallsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsViewController.swift; sourceTree = "<group>"; };
 		486AE843289C865B00C81775 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +85,14 @@
 			path = Call;
 			sourceTree = "<group>";
 		};
+		480F4DB82936B636001D7E59 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				480F4DB92936B648001D7E59 /* ChatTableViewCell.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
 		482A78F92936975D00A5D2F5 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +116,7 @@
 		486AE83C289C81D000C81775 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				480F4DB82936B636001D7E59 /* Chat */,
 				480F4DB22936B2AE001D7E59 /* Call */,
 				486AE83E289C855E00C81775 /* Status */,
 			);
@@ -200,6 +211,7 @@
 				486AE840289C857600C81775 /* StatusTableViewCell.swift in Sources */,
 				480F4DB42936B2C4001D7E59 /* CallTableViewCell.swift in Sources */,
 				486AE844289C865B00C81775 /* CameraViewController.swift in Sources */,
+				480F4DBA2936B648001D7E59 /* ChatTableViewCell.swift in Sources */,
 				486AE848289C86A600C81775 /* SettingsViewController.swift in Sources */,
 				16299FBB271A511C0061CAE0 /* StatusViewController.swift in Sources */,
 				486AE842289C85FF00C81775 /* CallsViewController.swift in Sources */,
