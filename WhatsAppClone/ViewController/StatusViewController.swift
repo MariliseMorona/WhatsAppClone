@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct Model {
+struct StatusModel {
     var title: String
     var subtitle: String
     var hour: String
@@ -93,7 +93,7 @@ extension StatusViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: StatusTableViewCell.identifier, for: indexPath) as? StatusTableViewCell else { return UITableViewCell() }
-        var model = Model(title: "Eu", subtitle: "Eu mesmo", hour: "22:09", numb: "22")
+        var model = StatusModel(title: "Eu", subtitle: "Eu mesmo", hour: "22:09", numb: "22")
         cell.backgroundColor = .yellow
         cell.populate = model
         return cell

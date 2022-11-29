@@ -73,6 +73,14 @@
 			path = WhatsAppClone;
 			sourceTree = "<group>";
 		};
+		482A78F92936975D00A5D2F5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				486AE83F289C857600C81775 /* StatusTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		486AE83B289C81C800C81775 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,7 +111,7 @@
 		486AE83E289C855E00C81775 /* Status */ = {
 			isa = PBXGroup;
 			children = (
-				486AE83F289C857600C81775 /* StatusTableViewCell.swift */,
+				482A78F92936975D00A5D2F5 /* Cell */,
 			);
 			path = Status;
 			sourceTree = "<group>";

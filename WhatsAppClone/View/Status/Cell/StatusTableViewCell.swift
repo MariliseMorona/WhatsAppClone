@@ -97,7 +97,6 @@ class StatusTableViewCell: UITableViewCell {
             
             labelTitle.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 10),
             labelTitle.leadingAnchor.constraint(equalTo: uiView.trailingAnchor, constant: 10),
-//            labelTitle.heightAnchor.constraint(equalToConstant: 5),
             
             labelHour.topAnchor.constraint(equalTo: labelTitle.topAnchor),
             labelHour.leadingAnchor.constraint(equalTo: labelTitle.leadingAnchor),
@@ -107,11 +106,12 @@ class StatusTableViewCell: UITableViewCell {
         ])
         
     }
-    var populate: Model? {
+    var populate: StatusModel? {
         didSet{
             guard let populate = populate else {  return }
             labelTitle.text = populate.title
             labelHour.text = populate.hour
+            uiImageView.image = UIImage(named: "user02")
         }
     }
 }
