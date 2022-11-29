@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		16299FB7271A511C0061CAE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16299FB6271A511C0061CAE0 /* AppDelegate.swift */; };
-		16299FB9271A511C0061CAE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16299FB8271A511C0061CAE0 /* SceneDelegate.swift */; };
-		16299FBB271A511C0061CAE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16299FBA271A511C0061CAE0 /* ViewController.swift */; };
-		16299FBE271A511C0061CAE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16299FBC271A511C0061CAE0 /* Main.storyboard */; };
+		16299FBB271A511C0061CAE0 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16299FBA271A511C0061CAE0 /* StatusViewController.swift */; };
 		16299FC0271A511E0061CAE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16299FBF271A511E0061CAE0 /* Assets.xcassets */; };
 		16299FC3271A511E0061CAE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16299FC1271A511E0061CAE0 /* LaunchScreen.storyboard */; };
+		486AE840289C857600C81775 /* StatusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486AE83F289C857600C81775 /* StatusTableViewCell.swift */; };
+		486AE842289C85FF00C81775 /* CallsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486AE841289C85FF00C81775 /* CallsViewController.swift */; };
+		486AE844289C865B00C81775 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486AE843289C865B00C81775 /* CameraViewController.swift */; };
+		486AE846289C868D00C81775 /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486AE845289C868D00C81775 /* ChatsViewController.swift */; };
+		486AE848289C86A600C81775 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486AE847289C86A600C81775 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		16299FB3271A511C0061CAE0 /* WhatsAppClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatsAppClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16299FB6271A511C0061CAE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		16299FB8271A511C0061CAE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		16299FBA271A511C0061CAE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		16299FBD271A511C0061CAE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		16299FBA271A511C0061CAE0 /* StatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
 		16299FBF271A511E0061CAE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16299FC2271A511E0061CAE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16299FC4271A511E0061CAE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		486AE83F289C857600C81775 /* StatusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusTableViewCell.swift; sourceTree = "<group>"; };
+		486AE841289C85FF00C81775 /* CallsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsViewController.swift; sourceTree = "<group>"; };
+		486AE843289C865B00C81775 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		486AE845289C868D00C81775 /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
+		486AE847289C86A600C81775 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +63,57 @@
 			isa = PBXGroup;
 			children = (
 				16299FB6271A511C0061CAE0 /* AppDelegate.swift */,
-				16299FB8271A511C0061CAE0 /* SceneDelegate.swift */,
-				16299FBA271A511C0061CAE0 /* ViewController.swift */,
-				16299FBC271A511C0061CAE0 /* Main.storyboard */,
+				486AE83D289C81E700C81775 /* ViewModel */,
+				486AE83C289C81D000C81775 /* View */,
+				486AE83B289C81C800C81775 /* ViewController */,
 				16299FBF271A511E0061CAE0 /* Assets.xcassets */,
 				16299FC1271A511E0061CAE0 /* LaunchScreen.storyboard */,
 				16299FC4271A511E0061CAE0 /* Info.plist */,
 			);
 			path = WhatsAppClone;
+			sourceTree = "<group>";
+		};
+		482A78F92936975D00A5D2F5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				486AE83F289C857600C81775 /* StatusTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		486AE83B289C81C800C81775 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				16299FBA271A511C0061CAE0 /* StatusViewController.swift */,
+				486AE841289C85FF00C81775 /* CallsViewController.swift */,
+				486AE843289C865B00C81775 /* CameraViewController.swift */,
+				486AE845289C868D00C81775 /* ChatsViewController.swift */,
+				486AE847289C86A600C81775 /* SettingsViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		486AE83C289C81D000C81775 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				486AE83E289C855E00C81775 /* Status */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		486AE83D289C81E700C81775 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		486AE83E289C855E00C81775 /* Status */ = {
+			isa = PBXGroup;
+			children = (
+				482A78F92936975D00A5D2F5 /* Cell */,
+			);
+			path = Status;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +176,6 @@
 			files = (
 				16299FC3271A511E0061CAE0 /* LaunchScreen.storyboard in Resources */,
 				16299FC0271A511E0061CAE0 /* Assets.xcassets in Resources */,
-				16299FBE271A511C0061CAE0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +186,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16299FBB271A511C0061CAE0 /* ViewController.swift in Sources */,
+				486AE840289C857600C81775 /* StatusTableViewCell.swift in Sources */,
+				486AE844289C865B00C81775 /* CameraViewController.swift in Sources */,
+				486AE848289C86A600C81775 /* SettingsViewController.swift in Sources */,
+				16299FBB271A511C0061CAE0 /* StatusViewController.swift in Sources */,
+				486AE842289C85FF00C81775 /* CallsViewController.swift in Sources */,
+				486AE846289C868D00C81775 /* ChatsViewController.swift in Sources */,
 				16299FB7271A511C0061CAE0 /* AppDelegate.swift in Sources */,
-				16299FB9271A511C0061CAE0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		16299FBC271A511C0061CAE0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				16299FBD271A511C0061CAE0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		16299FC1271A511E0061CAE0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -293,7 +337,6 @@
 				INFOPLIST_FILE = WhatsAppClone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +363,6 @@
 				INFOPLIST_FILE = WhatsAppClone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
