@@ -13,6 +13,7 @@
 		16299FC3271A511E0061CAE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16299FC1271A511E0061CAE0 /* LaunchScreen.storyboard */; };
 		480F4DB42936B2C4001D7E59 /* CallTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480F4DB32936B2C4001D7E59 /* CallTableViewCell.swift */; };
 		480F4DBA2936B648001D7E59 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480F4DB92936B648001D7E59 /* ChatTableViewCell.swift */; };
+		483EE032293964E00060F725 /* ConfigTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483EE031293964E00060F725 /* ConfigTableViewCell.swift */; };
 		486AE840289C857600C81775 /* StatusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486AE83F289C857600C81775 /* StatusTableViewCell.swift */; };
 		486AE842289C85FF00C81775 /* CallsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486AE841289C85FF00C81775 /* CallsViewController.swift */; };
 		486AE844289C865B00C81775 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486AE843289C865B00C81775 /* CameraViewController.swift */; };
@@ -29,6 +30,7 @@
 		16299FC4271A511E0061CAE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		480F4DB32936B2C4001D7E59 /* CallTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallTableViewCell.swift; sourceTree = "<group>"; };
 		480F4DB92936B648001D7E59 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
+		483EE031293964E00060F725 /* ConfigTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigTableViewCell.swift; sourceTree = "<group>"; };
 		486AE83F289C857600C81775 /* StatusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusTableViewCell.swift; sourceTree = "<group>"; };
 		486AE841289C85FF00C81775 /* CallsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsViewController.swift; sourceTree = "<group>"; };
 		486AE843289C865B00C81775 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,14 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		483EE030293964C90060F725 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				483EE031293964E00060F725 /* ConfigTableViewCell.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		486AE83B289C81C800C81775 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +126,7 @@
 		486AE83C289C81D000C81775 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				483EE030293964C90060F725 /* Config */,
 				480F4DB82936B636001D7E59 /* Chat */,
 				480F4DB22936B2AE001D7E59 /* Call */,
 				486AE83E289C855E00C81775 /* Status */,
@@ -217,6 +228,7 @@
 				486AE842289C85FF00C81775 /* CallsViewController.swift in Sources */,
 				486AE846289C868D00C81775 /* ChatsViewController.swift in Sources */,
 				16299FB7271A511C0061CAE0 /* AppDelegate.swift in Sources */,
+				483EE032293964E00060F725 /* ConfigTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
